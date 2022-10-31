@@ -31,6 +31,12 @@ Test commmit
 
 
 
+## Jet index data:
+To explain physical relationships between climate mechanisms represented by the climate indices used in this project, we calculated multiple jet phenomena from ERA5 wind data at various pressure levels. These indices include:
+| Code  | Name                              | Source | Reference | Calculation |
+| ----- | --------------------------------- | ------ | --------- | ----------- |
+|       |                                   |        |           |             |
+
 
 
 
