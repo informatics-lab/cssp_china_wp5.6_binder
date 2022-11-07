@@ -29,7 +29,6 @@ Monthly climate indices are identified by their month and abbreviation in the fo
 | EA    | East Atlantic pattern                    | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=NCEPData/cpc_ea&STATION=CPC_EA)             |                                          |
 | AMO   | Atlantic Multidecadal Oscillation        | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=UKMOData/amo_hadsst_ts&STATION=AMO_hadsst)  |                                          |
 | SEU   |                                          |                                                                                               |                                          |
-|       |                                          |                                                                                               |                                          |
 
 
 
