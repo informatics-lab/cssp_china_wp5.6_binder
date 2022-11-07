@@ -3,44 +3,52 @@
 The data used in this project has been sourced from the [KNMI Data Portal](https://climexp.knmi.nl/selectindex.cgi), [Copernicus Climate Data Store](https://cds.climate.copernicus.eu/cdsapp#!/home) and [National Bureau of Statistics of China](http://www.stats.gov.cn/english/).
 
 ## Climate index data:
-| Code  | Name                              | Source |
-| ----- | --------------------------------- | ------ |
-| AO    | Arctic Oscillation                | KNMI   |
-| CGT   | Circumglobal Teleconnection       | ERA5   |
-| EAWR  | East Atlantic/West Russia Pattern | KNMI   |
-| ENSO  | El Nino Southern Oscillation      | ???    |
-| ESnow | Eurasian Snowcover                | KNMI   |
-| IOD   | Indian Ocean Dipole               | ???    |
-| NAO   | North Atlantic Oscillation        | KNMI   |
-| SNAO  | Summer North Atlantic Oscillation | KNMI 
-| PEA   | Polar Eurasian                    | KNMI   |
-| SNAO  | Summer North Atlantic Oscillation | KNMI   |
-| WPSH  | West Pacific Subtropical High     | ???    |
-| AEA   | ???                               | ???    | # not sure what this is or if we use it 
-| MJO   | Madden-Julian Oscillation         | KNMI   |
-| NIN3  | El Nino 3                         | KNMI   |
-| PDO   | Pacific Decadal Oscillation       | KNMI   |
-| SCAND | Scandinavian Pattern              | KNMI   |
-| SOI   | ???                               | ???    | # not sure what this is or if we use it 
-| SAM   | Southern Annular Mode             | KNMI   | # not sure we have this 
-| QBO   | Quasi-Biennial Oscillation        | ???    |
-| PNA   | ???                               | ???    | # not sure what this is or if we use it 
-| EA    | East Atlantic Pattern             | KNMI   |
-| AMO   | Atlantic Multidecadal Oscillation | KNMI   |
+Monthly climate indices are identified by their month and abbreviation in the format `<abbreviation>-<month_number>` e.g. `peu-5` represents Polar Eurasian index in May. Most of the climate indices used in this project were sourced from the [KNMI Data Portal](https://climexp.knmi.nl/selectindex.cgi), as published. Others were manually calculated from ERA5 sea surface temperature data sourced from the [Copernicus Climate Data Store](https://cds.climate.copernicus.eu/cdsapp#!/home), processed according to the literature (see table below).
+
+| Code  | Name                                     | Source                                                                                        | Reference                                |
+| ----- | ---------------------------------------- | --------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| AO    | Arctic Oscillation                       | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=NCEPData/cpc_ao&STATION=AO_CPC)             |                                          |
+| CGT   | Circumglobal Teleconnection              | ERA5                                                                                          |                                          |
+| EAWR  | East Atlantic/West Russia Pattern        |                                                                                               |                                          |
+| ENSO  | El Nino Southern Oscillation             | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=UKMOData/hadisst1_nino3.4a&STATION=NINO3.4) |                                          |
+| ESnow | Eurasian Snowcover                       |                                                                                               |                                          |
+| IOD   | Indian Ocean Dipole                      |                                                                                               |                                          |
+| NAO   | North Atlantic Oscillation               | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=CRUData/nao&STATION=NAO-Gibraltar)          |                                          |
+| SNAO  | Summer North Atlantic Oscillation        | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=NCEPData/cpc_sca&STATION=CPC_SCA)           |                                          |
+| PEU   | Polar Eurasian                           | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=NCEPData/cpc_pol&STATION=CPC_POL)           |                                          |
+| WPSH  | West Pacific Subtropical High            |                                                                                               |                                          |
+| AEA   | Atlantic Eurasian Teleconnection pattern |                                                                                               | https://doi.org/10.1088/1748-9326/aa9d33 |
+| MJO   | Madden-Julian Oscillation                | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=NCEPData/cpc_mjo01_mean12&STATION=MJO_01)   |                                          |
+| NIN3  | El Nino 3                                | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=UKMOData/hadisst1_nino3a&STATION=NINO3)     |                                          |
+| PDO   | Pacific Decadal Oscillation              |                                                                                               |                                          |
+| SCAND | Scandinavian pattern                     | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=NCEPData/cpc_sca&STATION=CPC_SCA)           |                                          |
+| SOI   | Southern Oscillation Index               | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=NCEPData/cpc_soi&STATION=SOI)               |                                          |
+| SAM   | Southern Annular Mode                    | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=BASData/bas_sam&STATION=BAS_SAM)            |                                          |
+| QBO   | Quasi-Biennial Oscillation               | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=NCEPNCAR40/nqbo&STATION=CDC_QBO)            |                                          |
+| PNA   | Pacific North American pattern           |                                                                                               |                                          |
+| EA    | East Atlantic pattern                    | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=NCEPData/cpc_ea&STATION=CPC_EA)             |                                          |
+| AMO   | Atlantic Multidecadal Oscillation        | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=UKMOData/amo_hadsst_ts&STATION=AMO_hadsst)  |                                          |
+| SEU   |                                          |                                                                                               |                                          |
+|       |                                          |                                                                                               |                                          |
 
 
 
 ## Jet index data:
 To explain physical relationships between climate mechanisms represented by the climate indices used in this project, we calculated multiple jet phenomena from ERA5 wind data at various pressure levels. These indices include:
-| Code  | Name                              | Source | Reference | Calculation |
-| ----- | --------------------------------- | ------ | --------- | ----------- |
-|       |                                   |        |           |             |
+| Code    | Name                          | Source | Reference                                 |
+| ------- | ----------------------------- | ------ | ----------------------------------------- |
+| EASJU   | Eurasian Subtropical Jet U    |        | https://doi.org/10.1175/JCLI-D-14-00067.1 |
+| EASJV   | Eurasian Subtropical Jet V    |        | https://doi.org/10.1175/JCLI-D-14-00067.1 |
+| EAPJU   | Eurasian Polar Jet U          |        | https://doi.org/10.1175/JCLI-D-14-00067.1 |
+| EAPJV   | Eurasian Polar Jet V          |        | https://doi.org/10.1175/JCLI-D-14-00067.1 |
+| PSTRATU | Stratospheric Final Warming U | ERA5   | https://zenodo.org/record/5744919         |
+|         |                               |        |                                           |
 
 
 
 
 ## Temperature and precipitation data:
-Copernicus Climate Change Service (C3S) (2017): ERA5: Fifth generation of ECMWF atmospheric reanalyses of the global climate . Copernicus Climate Change Service Climate Data Store (CDS), date of access. https://cds.climate.copernicus.eu/cdsapp#!/home
+Copernicus Climate Change Service (C3S) (2017): ERA5: Fifth generation of ECMWF atmospheric reanalyses of the global climate. Copernicus Climate Change Service Climate Data Store (CDS), date of access ?? ???? 2021. https://cds.climate.copernicus.eu/cdsapp#!/home
 
 ## Maize yield data:
 Sourced from the [National Bureau of Statistics of China](http://www.stats.gov.cn/english/).
