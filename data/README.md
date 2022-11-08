@@ -20,7 +20,7 @@ Monthly climate indices are identified by their month and abbreviation in the fo
 | AEA   | Atlantic Eurasian Teleconnection pattern |                                                                                               | https://doi.org/10.1088/1748-9326/aa9d33 |
 | MJO   | Madden-Julian Oscillation                | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=NCEPData/cpc_mjo01_mean12&STATION=MJO_01)   |                                          |
 | NIN3  | El Nino 3                                | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=UKMOData/hadisst1_nino3a&STATION=NINO3)     |                                          |
-| PDO   | Pacific Decadal Oscillation              |                                                                                               |                                          |
+| PDO   | Pacific Decadal Oscillation              |  [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=UWData/pdo&STATION=PDO)                                                                                             |                                          |
 | SCAND | Scandinavian pattern                     | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=NCEPData/cpc_sca&STATION=CPC_SCA)           |                                          |
 | SOI   | Southern Oscillation Index               | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=NCEPData/cpc_soi&STATION=SOI)               |                                          |
 | SAM   | Southern Annular Mode                    | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=BASData/bas_sam&STATION=BAS_SAM)            |                                          |
