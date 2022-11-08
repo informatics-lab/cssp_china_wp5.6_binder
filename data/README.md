@@ -40,7 +40,7 @@ To explain physical relationships between climate mechanisms represented by the 
 | EASJV   | Eurasian Subtropical Jet V    |   ERA5     | https://doi.org/10.1175/JCLI-D-14-00067.1 |
 | EAPJU   | Eurasian Polar Jet U          |   ERA5     | https://doi.org/10.1175/JCLI-D-14-00067.1 |
 | EAPJV   | Eurasian Polar Jet V          |   ERA5     | https://doi.org/10.1175/JCLI-D-14-00067.1 |
-| PSTRATU | Stratospheric Final Warming U | ERA5   | https://zenodo.org/record/5744919         |
+| PSTRATU | Stratospheric Final Warming U | ERA5   | Hauchecorne, Alain. (2021). ERA5 dataset for the categorization of Stratospheric Final Warming (Version 1) [U60N]. Zenodo. https://doi.org/10.5281/zenodo.5744919        |
 |         |                               |        |                                           |
 
 
