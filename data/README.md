@@ -25,7 +25,7 @@ Monthly climate indices are identified by their month and abbreviation in the fo
 | SOI   | Southern Oscillation Index               | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=NCEPData/cpc_soi&STATION=SOI)               |                                          |
 | SAM   | Southern Annular Mode                    | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=BASData/bas_sam&STATION=BAS_SAM)            |                                          |
 | QBO   | Quasi-Biennial Oscillation               | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=NCEPNCAR40/nqbo&STATION=CDC_QBO)            |                                          |
-| PNA   | Pacific North American pattern           |                                                                                               |                                          |
+| PNA   | Pacific North American pattern           |  [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=NCEPData/cpc_pna&STATION=CPC_PNA)                                                                                             |                                          |
 | EA    | East Atlantic pattern                    | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=NCEPData/cpc_ea&STATION=CPC_EA)             |                                          |
 | AMO   | Atlantic Multidecadal Oscillation        | [KNMI](https://climexp.knmi.nl/getindices.cgi?WMO=UKMOData/amo_hadsst_ts&STATION=AMO_hadsst)  |                                          |
 | SEU   |                                          |                                                                                               |                                          |
