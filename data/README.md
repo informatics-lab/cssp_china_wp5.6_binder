@@ -44,7 +44,20 @@ To explain physical relationships between climate mechanisms represented by the 
 |         |                               |        |                                           |
 
 
+## Principle Components 
 
+MJO data is split into phases, each phase indicates the position of the MJO around the equator. Each phase then is a time series of the amplitude of the MJO at that time. Given the nature of the MJO which enhances convection in the centre and suppress convection ahead and behind this centre. It's reasonable to assume that when using phases for this analysis ( 4 and 5 for example), we would see an equally strong correlation with opposite sign, since one is enhanced and the other suppressed. Ideally we want to incorporate all of this information into one index, we can do this with principle components. 
+
+Initially running the method with all 10 phases from KNMI, certain phases came out as important and showed this behavior mentioned above. These phases were as follows: Phase 4 (140E), Phase 5 (160E)
+, Phase 8 (10W), Phase 9 (20E) and Phase 10 (70E). From these we made four indices, PC1 and PC2 of Phases 4 and 5 and  PC1 and PC2 of Phases 8,9,10.
+
+In these are described in plots as:
+mjopc1a = PC1 of phases 4 and 5 
+mjopc1b = PC2 of phases 4 and 5
+mjopc2a = PC1 of phases 8,9 and 10
+mjopc2b = PC2 of phases 8,9 and 10
+
+The convention here being a = PC1, b = PC2 and the 1 and 2 indicate which phases went into making that principle component 1 = Phases 4 and 5 and 2 = Phases 8,9 and 10. 
 
 ## Temperature and precipitation data:
 Copernicus Climate Change Service (C3S) (2017): ERA5: Fifth generation of ECMWF atmospheric reanalyses of the global climate. Copernicus Climate Change Service Climate Data Store (CDS), date of access ?? ???? 2021. https://cds.climate.copernicus.eu/cdsapp#!/home
