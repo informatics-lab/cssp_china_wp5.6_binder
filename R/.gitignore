@@ -1,0 +1,2 @@
+# Ignore all plots produced in this sub directory 
+*.png
