@@ -36,18 +36,18 @@ Monthly climate indices are identified by their month and abbreviation in the fo
 | WPSH      | West Pacific Subtropical High                       | [ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means) | [Riyu, 2002](https://doi.org/10.1007/s00376-002-0061-5)                                                                                      |
 | VAP       | Water vapour                                        | [ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means) | [Seabrook et al., 2023](https://doi.org/10.1029/2022GL101226)                                                                                |
 | PSTRATU   | Northern Hemisphere polar stratospheric zonal winds | [ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means) | [Hauchecorne, 2021](https://doi.org/10.5281/ZENODO.5744919)                                                                                  |
-|           |                                                     |                                                                                                        |                                                                                                                                              |
+
 
 
 ## Jet index data:
-To explain physical relationships between climate mechanisms represented by the climate indices used in this project, we calculated multiple jet phenomena from ERA5 wind data at various pressure levels. These indices include:
+To explain physical relationships between climate mechanisms represented by the climate indices used in this project, we calculated multiple jet phenomena from monthly [ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means) wind data at various pressure levels. These indices include:
 | Code  | Name                       | Source | Reference                                                                                       |
 | ----- | -------------------------- | ------ | ----------------------------------------------------------------------------------------------- |
 | EASJU | Eurasian Subtropical Jet U | ERA5   | [Huang et al., 2014](https://doi.org/10.1175/JCLI-D-14-00067.1) or manually defined (see paper) |
 | EASJV | Eurasian Subtropical Jet V | ERA5   | [Huang et al., 2014](https://doi.org/10.1175/JCLI-D-14-00067.1) or manually defined (see paper) |
 | EAPJU | Eurasian Polar Jet U       | ERA5   | [Huang et al., 2014](https://doi.org/10.1175/JCLI-D-14-00067.1) or manually defined (see paper) |
 | EAPJV | Eurasian Polar Jet V       | ERA5   | [Huang et al., 2014](https://doi.org/10.1175/JCLI-D-14-00067.1) or manually defined (see paper) |
-|       |                            |        |                                                                                                 |
+
 
 
 ## MJO Principle Components 
