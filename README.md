@@ -6,6 +6,11 @@
 # CSSP China ML: Predicting weather in North East China using machine learning
 This repo contains demonstrations of the techniques developed to predict temperature and precipitation in North East China using climate index timeseries data for the purpose of maize yield forecasting. These demonstrations were developed using R and Python, and can be interactively explored online using the [Binder](https://mybinder.org/) instance setup in this repository.
 
+## Integrating `draw.io` diagram in README.md
+
+![Digram](http://jgraph.github.io/drawio-github/edit-diagram.html?repo=cssp_china_wp5.6_binder&path=cssp_china_wp56_workflow-Bayesian_subnetwork_paper_1000bn.drawio.png)
+
+
 ## Using the Binder
 
 Click the badges above to launch a live, interactive Jupyter Lab or RStudio session in your browser. Execute the notebooks/scripts, edit them, create new ones and upload your own data to analyse. 
