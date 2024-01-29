@@ -8,7 +8,10 @@ This repo contains demonstrations of the techniques developed to predict tempera
 
 ## Integrating `draw.io` diagram in README.md
 
-![Digram](http://jgraph.github.io/drawio-github/edit-diagram.html?repo=cssp_china_wp5.6_binder&path=cssp_china_wp56_workflow-Bayesian_subnetwork_paper_1000bn.drawio.png)
+![Digram](http://jgraph.github.io/cssp_china_wp56_workflow-Bayesian_subnetwork_paper_1000bn.drawio)
+
+
+![edit](http://jgraph.github.io/drawio-github/edit-diagram.html?repo=cssp_china_wp5.6_binder&path=cssp_china_wp56_workflow-Bayesian_subnetwork_paper_1000bn.drawio.png)
 
 
 ## Using the Binder
